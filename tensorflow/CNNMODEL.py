@@ -68,6 +68,9 @@ class CNNModel:
         self.load_log = self.loaded_graph.get_tensor_by_name('LOGITS:0')
         self.load_keep = self.loaded_graph.get_tensor_by_name('KEEP:0')
 
+    def __del__(self):
+    	self.sess.close()
+
     def predict(self, pixel):
         # Pre-processing
         max = pixel.max() + 0.001
