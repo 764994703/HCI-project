@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 import random
 from PIL import Image
-import CNN_MODEL as MODEL
 
 
 IMAGE_SIZE = 48

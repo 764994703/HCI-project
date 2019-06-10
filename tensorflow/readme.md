@@ -22,3 +22,6 @@ sess.close()
 
 ## TestModel.py
 对同目录下训练过的模型进行测试，输出准确率。
+
+## face.py
+调用opencv和CNN_MODEL，对摄像头图像进行人脸分割和情绪识别。
