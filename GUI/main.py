@@ -3,7 +3,7 @@
 import wx
 import DriverGUI
 
-
+RESOURCES_PATH = "resources/"
 SCORE_TEXTS = ["请先驾驶一段时间",
                "建议休息",
                "请小心驾驶",
@@ -19,10 +19,10 @@ class MainFrame(DriverGUI.main_frame):
     def switchToScorePanel(self, event):
         if self.config_panel.IsShown():
             # Change icons' color
-            self.estimate_bitmap.SetBitmap(wx.Bitmap(u"estimate_green_small.png", wx.BITMAP_TYPE_ANY))
+            self.estimate_bitmap.SetBitmap(wx.Bitmap(RESOURCES_PATH + u"estimate_green_small.png", wx.BITMAP_TYPE_ANY))
             self.estimate_icon_statictext.SetForegroundColour(wx.Colour(0, 128, 0))
             self.estimate_icon_statictext.Refresh()
-            self.config_bitmap.SetBitmap(wx.Bitmap(u"config_small.png", wx.BITMAP_TYPE_ANY))
+            self.config_bitmap.SetBitmap(wx.Bitmap(RESOURCES_PATH + u"config_small.png", wx.BITMAP_TYPE_ANY))
             self.config_icon_statictext.SetForegroundColour(wx.Colour(0, 0, 0))
             self.config_icon_statictext.Refresh()
 
@@ -32,10 +32,10 @@ class MainFrame(DriverGUI.main_frame):
     def switchToConfigPanel(self, event):
         if self.score_panel.IsShown():
             # Change icons' color
-            self.config_bitmap.SetBitmap(wx.Bitmap(u"config_green_small.png", wx.BITMAP_TYPE_ANY))
+            self.config_bitmap.SetBitmap(wx.Bitmap(RESOURCES_PATH + u"config_green_small.png", wx.BITMAP_TYPE_ANY))
             self.config_icon_statictext.SetForegroundColour(wx.Colour(0, 128, 0))
             self.config_icon_statictext.Refresh()
-            self.estimate_bitmap.SetBitmap(wx.Bitmap(u"estimate_small.png", wx.BITMAP_TYPE_ANY))
+            self.estimate_bitmap.SetBitmap(wx.Bitmap(RESOURCES_PATH + u"estimate_small.png", wx.BITMAP_TYPE_ANY))
             self.estimate_icon_statictext.SetForegroundColour(wx.Colour(0, 0, 0))
             self.estimate_icon_statictext.Refresh()
 

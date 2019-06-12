@@ -172,7 +172,7 @@ class main_frame ( wx.Frame ):
 		self.estimate_icon_panel = wx.Panel( self.menu_panel, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
 		bSizer6 = wx.BoxSizer( wx.VERTICAL )
 
-		self.estimate_bitmap = wx.StaticBitmap( self.estimate_icon_panel, wx.ID_ANY, wx.Bitmap( u"estimate_green_small.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.estimate_bitmap = wx.StaticBitmap( self.estimate_icon_panel, wx.ID_ANY, wx.Bitmap( u"resources/estimate_green_small.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer6.Add( self.estimate_bitmap, 0, wx.ALL, 5 )
 
 		self.estimate_icon_statictext = wx.StaticText( self.estimate_icon_panel, wx.ID_ANY, u"评估", wx.DefaultPosition, wx.DefaultSize, 0 )
@@ -192,7 +192,7 @@ class main_frame ( wx.Frame ):
 		self.config_icon_panel = wx.Panel( self.menu_panel, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
 		bSizer61 = wx.BoxSizer( wx.VERTICAL )
 
-		self.config_bitmap = wx.StaticBitmap( self.config_icon_panel, wx.ID_ANY, wx.Bitmap( u"config_small.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.config_bitmap = wx.StaticBitmap( self.config_icon_panel, wx.ID_ANY, wx.Bitmap( u"resources/config_small.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.config_bitmap.SetBackgroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_WINDOW ) )
 
 		bSizer61.Add( self.config_bitmap, 0, wx.ALL, 5 )
