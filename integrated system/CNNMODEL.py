@@ -1,3 +1,5 @@
+# -*- coding: UTF-8 -*-
+
 import tensorflow as tf
 import pandas as pd
 import numpy as np
@@ -7,7 +9,7 @@ IMAGE_SIZE = 48
 CLIPED_SIZE = 42
 EMO_NUM = 7
 NUM_CHANNEL = 1
-SAVE_PATH = './saved_model'
+SAVE_PATH = './resources/saved_model'
 
 
 def GetSymmetric(pixel, size):

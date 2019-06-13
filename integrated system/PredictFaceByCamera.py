@@ -1,11 +1,13 @@
+# -*- coding: UTF-8 -*-
+
 import cv2
 import numpy as np
 import CNNMODEL as cnn
 
 
 # Constants
-emotion_labels = ['angry', "disgust", 'fear', 'happy', 'sad', 'surprise', 'neutral']
-cascPath = "./haarcascade_frontalface_default.xml"
+EMOTION_LABELS = ['angry', "disgust", 'fear', 'happy', 'sad', 'surprise', 'neutral']
+CASC_PATH = "./resources/chaarcascade_frontalface_default.xml"
 
 
 def predict_emotion(face_image_gray, cnn_model):  # a single cropped face
@@ -20,7 +22,7 @@ def predict_emotion(face_image_gray, cnn_model):  # a single cropped face
 
 
 def main():
-    faceCascade = cv2.CascadeClassifier(cascPath)
+    faceCascade = cv2.CascadeClassifier(CASC_PATH)
 
     # Load the model
     cnn_model = cnn.CNNModel()
@@ -44,7 +46,7 @@ def main():
             face_image_gray = img_gray[y:y + h, x:x + w]
             cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
             list2 = predict_emotion(face_image_gray, cnn_model)
-            print(emotion_labels[np.argmax(list2)])
+            print(EMOTION_LABELS[np.argmax(list2)])
 
         cv2.imshow('Video', frame)
 
