@@ -71,7 +71,7 @@ class CNNModel:
         self.load_keep = self.loaded_graph.get_tensor_by_name('KEEP:0')
 
     def __del__(self):
-    	self.sess.close()
+        self.sess.close()
 
     def predict(self, pixel):
         # Pre-processing
