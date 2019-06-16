@@ -1,0 +1,6 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# testing videos
+*.mp4
+# testing photos
+/integrated system/testinput
