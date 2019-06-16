@@ -16,3 +16,7 @@
 
 ## 实验设备
 - 模拟驾驶环境
+
+## 使用
+
+运行integrated system/CentralManager.py。
